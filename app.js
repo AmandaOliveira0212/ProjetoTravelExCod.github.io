@@ -38,9 +38,9 @@ sql.connect(config)
 // Serve arquivos estáticos da pasta "projeto"
 app.use(express.static(path.join(__dirname)));
 
-// Rota para servir o arquivo index.html
+// Rota para servir o arquivo travelex.html index
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'index.html'));
+  res.sendFile(path.join(__dirname, 'travelex.html'));
 });
 
 // Rota para servir o arquivo anuncio.html
